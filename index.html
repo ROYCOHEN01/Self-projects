@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הארנק שלי</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <div class="container">
+        <h1>הארנק שלי</h1>
+        <div class="options">
+            <button id="shoppingOption">קניות</button>
+            <button id="editCardsOption">עריכת הכרטיסים שלי</button>
+        </div>
+        <!-- Add this line between pages -->
+<hr class="divider">
+<!-- HTML -->
+<div id="shoppingSection" class="section hidden">
+    <h2>באיזו חנות תרצה לקנות?</h2>
+    <select id="companySelect">
+        <option value="" disabled selected>בחר חנות</option>
+        <option value="Zara">Zara</option>
+        <option value="H&M">H&M</option>
+        <option value="Adidas">Adidas</option>
+        <option value="Nike">Nike</option>
+        <option value="Fox">Fox</option>
+        <option value="Castro">Castro</option>
+        <option value="Crazy Line">Crazy Line</option>
+        <option value="Pull & Bear">Pull & Bear</option>
+        <option value="Celio">Celio</option>
+        <option value="Super-Pharm">Super-Pharm</option>
+    </select>
+    <button id="submitCompany">שלח</button>
+</div>
+
+        <div id="editCardsSection" class="section hidden">
+            <h2>עריכת הכרטיסים שלי</h2>
+            <div class="options">
+                <button id="giftCardOption">כרטיס מתנה</button>
+                <button id="creditCardOption">כרטיס אשראי</button>
+                <button id="myClubsOption">המועדונים שלי</button>
+            </div>
+            <hr class="divider">
+            <div id="giftCardForm" class="form hidden">
+                <h3>כרטיס מתנה</h3>
+                 <div class="circle-icon"><i class="fas fa-camera"></i></h2>
+               <select id="giftCardCompany">
+               <option value="" disabled selected>בחר חנות</option>
+               <option value="Zara">Zara</option>
+               <option value="H&M">H&M</option>
+               <option value="Adidas">Adidas</option>
+               <option value="Nike">Nike</option>
+               <option value="Fox">Fox</option>
+               <option value="Castro">Castro</option>
+               <option value="Crazy Line">Crazy Line</option>
+               <option value="Pull & Bear">Pull & Bear</option>
+               <option value="Celio">Celio</option>
+               <option value="Super-Pharm">Super-Pharm</option>
+               </select>
+                <input type="number" id="giftCardAmount" placeholder="סכום">
+                <span>₪</span>
+                <input type="date" id="giftCardExpiry" placeholder="תאריך תפוגה">
+                <i class="fas fa-calendar-alt"></i> <!-- Calendar icon -->
+                <button id="saveGiftCard">שמור כרטיס מתנה</button>
+                </div>
+            </div>
+            <div id="creditCardForm" class="form hidden">
+                <h3>כרטיס אשראי</h3>
+                <div class="circle-icon"><i class="fas fa-camera"></i></h2>
+                <select id="creditCardCompany">
+                   <option value="visa">ויזה</option>
+                   <option value="mastercard">מאסטרקארד</option>
+                   <option value="americanexpress">אמריקן אקספרס</option>
+                   <option value="cal">כאל</option>
+                   <option value="isracard">ישראכרט</option>
+                </select>
+                <input type="text" id="creditCardType" placeholder="סוג">
+                <input type="date" id="creditCardExpiry" placeholder="תאריך תפוגה">
+                <i class="fas fa-calendar-alt"></i> <!-- Calendar icon -->
+                <button id="saveCreditCard">שמור כרטיס אשראי</button>                               <div> 
+
+            </div>
+            <div id="myClubsForm" class="form hidden">
+                <h3>המועדונים שלי</h3>
+                <div class="circle-icon"><i class="fas fa-camera"></i></h2>
+                <input type="text" id="clubCompany" placeholder="חברה">
+                <input type="month" id="clubStartDate" placeholder="תאריך התחלה">
+                <i class="fas fa-calendar-alt"></i> <!-- Calendar icon -->
+                <button id="saveClub">שמור מועדון</button>
+                <div>
+            </div>
+        </div>
+        <!-- Headline for saved gift cards -->
+              <!-- Add this line between pages -->
+<hr class="divider">
+
+        <h2>כרטיסי מתנה שמורים</h2>
+        <div id="giftCardsContainer" class="cards-container"></div>
+        <!-- Headline for saved credit cards -->
+        <h2>כרטיסי אשראי שמורים</h2>
+        <div id="creditCardsContainer" class="cards-container"></div>
+        <!-- Headline for saved club cards -->
+        <h2>מועדונים שמורים</h2>
+        <div id="clubsContainer" class="cards-container"></div>
+        
+  </div>
+
+    <!-- Modal and other modals -->
+    <!-- Script tags -->
+</body>
+</html>
