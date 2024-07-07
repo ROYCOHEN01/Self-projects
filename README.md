@@ -13,15 +13,7 @@ Location-Based Usage: Identify where each card is valid for informed usage decis
 Sketch
 
 Next Steps:
+Implement more features.
 Implement card scanning functionality.
 Develop user-friendly interface.
 Enhance security features.
-Installation:
-Clone the repository and run npm install to get started.
-
-Usage:
-Run npm start to launch the app.
-
-Contributing:
-Feel free to fork the project and submit pull requests.
-
